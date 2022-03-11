@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assetcs/images/navbar/Logo.svg";
+import { useAuth } from "../../contexts/AuthContext";
+import { ADMIN } from "../../helpers/consts";
 
 import "../Navbar/Navbar.css";
 
@@ -18,6 +20,11 @@ function Navbar() {
     } else setIcon("nav__toggler");
   };
 
+  const {
+    handleLogout,
+    user: { email },
+  } = useAuth();
+
   return (
     <nav className="nav">
       <img className="imgLogo" src={logo} alt="" />
@@ -25,38 +32,60 @@ function Navbar() {
         <Link to="/">
           <li className="nav__item">
             <a href="#" className="nav__link">
-              Home
+              Главная
             </a>
           </li>
         </Link>
         <Link to="/about">
           <li className="nav__item">
             <a href="#" className="nav__link">
-              About
+              О нас
             </a>
           </li>
         </Link>
         <Link to="/contact">
           <li className="nav__item">
             <a href="#" className="nav__link">
-              Contact
+              Контакты
             </a>
           </li>
         </Link>
         <Link to="/service">
           <li className="nav__item">
             <a href="#" className="nav__link">
-              Service
+              Туры
             </a>
           </li>
         </Link>
-        <Link to="/login">
-          <li className="nav__item">
-            <a href="#" className="nav__link">
-              Login
-            </a>
-          </li>
+        <Link to="/admin">
+          {email == ADMIN ? (
+            <li className="nav__item">
+              <a href="#" className="nav__link">
+                Админ П
+              </a>
+            </li>
+          ) : null}
         </Link>
+
+        {email ? (
+          <Link to="/">
+            <li className="nav__item">
+              <a href="#" className="nav__link" onClick={handleLogout}>
+                Выход
+              </a>
+            </li>
+          </Link>
+        ) : null}
+
+        {email ? null : (
+          <Link to="/auth">
+            <li className="nav__item">
+              <a href="#" className="nav__link" onClick={handleLogout}>
+                Вход
+              </a>
+            </li>
+          </Link>
+        )}
       </ul>
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>

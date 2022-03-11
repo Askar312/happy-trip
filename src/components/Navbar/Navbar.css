@@ -59,6 +59,7 @@ a {
     cursor: pointer;
   }
   a {
+    color: black;
     margin-left: -5vw;
   }
   .nav__menu {
@@ -67,7 +68,7 @@ a {
     right: 0;
     height: 93vh;
     width: 40vw;
-    background-image: url("https://images.wallpaperscraft.ru/image/single/zvezdnoe_nebo_chelovek_svet_blesk_118118_1920x1080.jpg");
+    background-color: rgb(0, 0, 0, 0);
     flex-direction: column;
     transform: translateX(100%);
     transition: 1s ease-in;
