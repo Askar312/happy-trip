@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Login from "./components/Login/Login";
+import Hero from "./components/Slider/Hero";
 import { useAuth } from "./contexts/AuthContext";
 import { ADMIN } from "./helpers/consts";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -42,6 +43,11 @@ const MainRoutes = () => {
       link: "/login",
       element: <Login />,
       id: 6,
+    },
+    {
+      link: "/slide",
+      element: <Hero />,
+      id: 7,
     },
   ];
   const PRIVATE_ROUTES = [
