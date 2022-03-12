@@ -140,28 +140,29 @@ function Slide({ slide, offset }) {
   const ref = useTilt(active);
 
   return (
-    <div
-      ref={ref}
-      className="slide"
-      data-active={active}
-      style={{
-        "--offset": offset,
-        "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1,
-      }}
-    >
+    <div className="hero">
       <div
-        className="slideBackground"
+        ref={ref}
+        className="slide"
+        data-active={active}
         style={{
-          backgroundImage: `url('${slide.image}')`,
-        }}
-      />
-      <div
-        className="slideContent"
-        style={{
-          backgroundImage: `url('${slide.image}')`,
+          "--offset": offset,
+          "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1,
         }}
       >
-        <div className="slideContentInner">
+        <div
+          className="slideBackground"
+          style={{
+            backgroundImage: `url('${slide.image}')`,
+          }}
+        />
+        <div
+          className="slideContent"
+          style={{
+            backgroundImage: `url('${slide.image}')`,
+          }}
+        >
+          <div className="slideContentInner"></div>
           <h2 className="slideTitle">{slide.title}</h2>
           <h3 className="slideSubtitle">{slide.subtitle}</h3>
           <p className="slideDescription">{slide.description}</p>
