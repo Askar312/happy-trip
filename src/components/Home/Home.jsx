@@ -1,10 +1,11 @@
 import React from "react";
-
+import style from "../Home/Home.module.css";
 const Home = () => {
   return (
     <div>
       <img
-        src="https://media-exp1.licdn.com/dms/image/C560BAQH9Cnv1weU07g/company-logo_200_200/0/1575479070098?e=2147483647&v=beta&t=i4Pp6zVfz5VAznPIik_ua4I75sKlu4yAdGKgHC9vpTo"
+        className={style.img}
+        src="https://funart.pro/uploads/posts/2021-04/1617273376_41-p-oboi-gori-kirgizii-44.jpg"
         alt=""
       />
     </div>

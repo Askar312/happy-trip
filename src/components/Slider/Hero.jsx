@@ -2,39 +2,75 @@ import React from "react";
 import "../Slider/Hero.css";
 const slides = [
   {
-    title: "Machu Picchu",
-    subtitle: "Peru",
-    description: "Adventure is never far away",
-    image:
-      "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+    title: "Кыргызстан",
+    subtitle: "Иссык Куль",
+    description: "Озеро",
+    image: "https://radioiskatel.ru/wp-content/uploads/2018/12/issyk-kul.jpg",
   },
   {
-    title: "Chamonix",
-    subtitle: "France",
-    description: "Let your dreams come true",
+    title: "Кыргызстан",
+    subtitle: "Ала-Арча",
+    description: "Заповедник",
     image:
-      "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "http://vitalik.kz/wp-content/uploads/2017/06/%D0%92%D0%B8%D0%B4-%D0%BD%D0%B0-%D1%83%D1%89%D0%B5%D0%BB%D1%8C%D0%B5-%D0%90%D0%BB%D0%B0-%D0%90%D1%80%D1%87%D0%B0.jpg",
   },
   {
-    title: "Mimisa Rocks",
-    subtitle: "Australia",
-    description: "A piece of heaven",
+    title: "Кыргызстан",
+    subtitle: "Жети-Огуз",
+    description: "Горы",
     image:
-      "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://triptokyrgyzstan.com/sites/default/files/media/image/c_genadii_vyenko_1_0.jpg",
   },
   {
-    title: "Four",
-    subtitle: "Australia",
-    description: "A piece of heaven",
+    title: "Кыргызстан",
+    subtitle: "Сары Челек",
+    description: "Озеро",
     image:
-      "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://strannik.kg/assets/cache_image/assets/lib/2020/03/20/sarychekek_01_1600x0_9ab.webp",
   },
   {
-    title: "Five",
-    subtitle: "Australia",
-    description: "A piece of heaven",
+    title: "Кыргызстан",
+    subtitle: "Токтогул",
+    description: "Водохранилище",
     image:
-      "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1c/%D0%A2%D0%BE%D0%BA%D1%82%D0%BE%D0%B3%D1%83%D0%BB.jpg",
+  },
+  {
+    title: "Кыргызстан",
+    subtitle: "Алтын-Арашан",
+    description: "Ущелье",
+    image:
+      "https://too.kg/wp-content/uploads/362273-svetik_2880x1800-1024x640.jpg",
+  },
+  {
+    title: "Кыргызстан",
+    subtitle: "Сон-Куль",
+    description: "Озеро",
+    image: "https://too.kg/wp-content/uploads/Ozero_Son-Kul_7-1024x576.jpg",
+  },
+  {
+    title: "Кыргызстан",
+    subtitle: "Кель-Суу",
+    description: "Озеро",
+    image: "https://too.kg/wp-content/uploads/dsc7006-2-1024x683.jpg",
+  },
+  {
+    title: "Кыргызстан",
+    subtitle: "Таш-Рабат",
+    description: "Караван-сарай",
+    image: "https://too.kg/wp-content/uploads/IMG_8588-1024x683.jpg",
+  },
+  {
+    title: "Кыргызстан",
+    subtitle: "Бурана",
+    description: "Башня",
+    image: "https://too.kg/wp-content/uploads/g4-1024x698.jpg",
+  },
+  {
+    title: "Кыргызстан",
+    subtitle: "Ала-Куль",
+    description: "Озеро",
+    image: "https://too.kg/wp-content/uploads/Ala_Kol-1024x683.jpg",
   },
 ];
 
