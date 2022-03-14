@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import { useProducts } from "../../contexts/ProductContext";
 import MediaCard from "./TourCard";
+import Footer from "../Footer/Footer";
 
 const TourList = () => {
   const { getProducts, products } = useProducts();
@@ -30,6 +31,7 @@ const TourList = () => {
           </Grid>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

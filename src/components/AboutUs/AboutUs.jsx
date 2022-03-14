@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "../AboutUs/AboutUs.module.css";
+import Footer from "../Footer/Footer";
 
 const AboutUs = () => {
   return (
@@ -74,6 +75,7 @@ const AboutUs = () => {
       <Link to="/slide">
         <Button className={style.aboutButton}>Топ 20 фото</Button>
       </Link>
+      <Footer />
     </div>
   );
 };

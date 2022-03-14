@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 
 const Contacts = () => {
   return (
@@ -6,6 +7,7 @@ const Contacts = () => {
       <h1 className="text-center" style={{ paddingTop: "30%" }}>
         Contact Us
       </h1>
+      <Footer />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 .card_page {
   margin-left: 5vw;
+  width: 300px;
   margin-top: 10px;
   transition: 1s;
 }
-.card_page:hover{
-  
+/* .card_page:hover {
   transform: scale(1.2);
-}
+} */

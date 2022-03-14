@@ -1,0 +1,7 @@
+.containerSection1 {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("https://oir.mobi/uploads/posts/2021-05/1622302246_58-oir_mobi-p-priroda-kirgizstana-priroda-krasivo-foto-61.jpg");
+  margin-top: -4px;
+  flex-wrap: wrap;
+}

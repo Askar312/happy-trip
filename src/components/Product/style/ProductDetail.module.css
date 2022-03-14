@@ -1,6 +1,6 @@
 .detailsWrap {
   display: flex;
-  background-image: url("https://storge.pic2.me/cm/1920x1080/904/5523d4354da22.jpg");
+  background-image: url("https://funart.pro/uploads/posts/2021-04/1617273376_41-p-oboi-gori-kirgizii-44.jpg");
 }
 .detailsList {
   margin-top: 25vh;
@@ -8,6 +8,7 @@
   text-align: center;
 }
 .detailSpan {
+  margin-left: 10vw;
   color: red;
   font-size: 28px;
 }
