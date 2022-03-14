@@ -11,6 +11,7 @@
   position: absolute;
   overflow: hidden;
   margin-left: 5vw;
+  text-align: center;
 }
 
 html {
@@ -59,11 +60,11 @@ html {
 }
 
 .slides > button:first-child {
-  left: -50%;
+  left: -40%;
 }
 
 .slides > button:last-child {
-  right: -50%;
+  right: -40%;
 }
 
 .slideContent {
@@ -142,7 +143,7 @@ html {
 }
 
 .slide[data-active] .slideBackground {
-  opacity: 0.2;
+  opacity: 0.5;
   -webkit-transform: none;
           transform: none;
 }

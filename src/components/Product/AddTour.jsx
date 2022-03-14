@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
 
-const AddProduct = () => {
-  const { addProduct } = useProducts();
+const AddTour = () => {
+  const { addTour } = useProducts();
 
   const navigate = useNavigate();
 
@@ -113,7 +113,7 @@ const AddProduct = () => {
               size="large"
               fullWidth
               onClick={() => {
-                addProduct(product);
+                addTour(product);
 
                 navigate("/products");
               }}
@@ -127,4 +127,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default AddTour;

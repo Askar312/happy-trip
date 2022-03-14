@@ -1,10 +1,10 @@
 import React from "react";
-import AddProduct from "../components/Product/AddProduct";
+import AddTour from "../components/Product/AddTour";
 
 const AdminPage = () => {
   return (
     <div>
-      <AddProduct />
+      <AddTour />
     </div>
   );
 };

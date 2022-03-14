@@ -8,6 +8,7 @@
   position: absolute;
   overflow: hidden;
   margin-left: 5vw;
+  text-align: center;
 }
 
 html {
@@ -48,10 +49,10 @@ html {
     }
 
     &:first-child {
-      left: -50%;
+      left: -40%;
     }
     &:last-child {
-      right: -50%;
+      right: -40%;
     }
   }
 }
@@ -121,7 +122,7 @@ html {
   pointer-events: auto;
 
   .slideBackground {
-    opacity: 0.2;
+    opacity: 0.5;
     transform: none;
   }
 

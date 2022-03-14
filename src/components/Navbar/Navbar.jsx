@@ -22,7 +22,7 @@ const pages = [
   { name: "Главная", link: "/", id: 1 },
   { name: "О нас", link: "/about", id: 2 },
   { name: "Контакты", link: "/contact", id: 7 },
-  { name: "Туры", link: "/service", id: 4 },
+  { name: "Туры", link: "/products", id: 9 },
 ];
 
 const Navbar = () => {

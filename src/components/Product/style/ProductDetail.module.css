@@ -1,0 +1,29 @@
+.detailsWrap {
+  display: flex;
+  background-image: url("https://storge.pic2.me/cm/1920x1080/904/5523d4354da22.jpg");
+}
+.detailsList {
+  margin-top: 25vh;
+  color: black;
+  text-align: center;
+}
+.detailSpan {
+  color: red;
+  font-size: 28px;
+}
+.detailImg {
+  margin-left: 2.5vw;
+  width: 40vw;
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+}
+@media (max-width: 500px) {
+  .detailImg {
+    margin-left: 22vw;
+    width: 60vw;
+  }
+  .detailsList {
+    margin-top: 40vh;
+    margin-left: -80vw;
+  }
+}

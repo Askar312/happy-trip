@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Login from "./components/Login/Login";
+import EditTour from "./components/Product/EditTour";
 import Hero from "./components/Slider/Hero";
 import { useAuth } from "./contexts/AuthContext";
 import { ADMIN } from "./helpers/consts";
@@ -9,7 +10,8 @@ import AdminPage from "./pages/AdminPage";
 import AuthPage from "./pages/AuthPage";
 import ContactsPage from "./pages/ContactsPage";
 import HomePage from "./pages/HomePage";
-import ServicePage from "./pages/ServicePage";
+import TourDetailsPage from "./pages/TourDetailsPage";
+import TourPage from "./pages/TourPage";
 
 const MainRoutes = () => {
   const { user } = useAuth();
@@ -35,8 +37,8 @@ const MainRoutes = () => {
       id: 4,
     },
     {
-      link: "/service",
-      element: <ServicePage />,
+      link: "/products",
+      element: <TourPage />,
       id: 5,
     },
     {
@@ -49,12 +51,22 @@ const MainRoutes = () => {
       element: <Hero />,
       id: 7,
     },
+    {
+      link: "/products/:id",
+      element: <TourDetailsPage />,
+      id: 8,
+    },
   ];
   const PRIVATE_ROUTES = [
     {
       link: "/admin",
       element: <AdminPage />,
       id: 1,
+    },
+    {
+      link: "/edit/:id",
+      element: <EditTour />,
+      id: 2,
     },
   ];
   return (
