@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Grid, TextField } from "@mui/material";
 import { useProducts } from "../../contexts/ProductContext";
 import MediaCard from "./TourCard";
-import Footer from "../Footer/Footer";
+
 import SideBar from "../SideBar/SideBar";
 import { useSearchParams } from "react-router-dom";
 
-const TourList = () => {
-  const { getProducts, products } = useProducts();
+const TourList = ({ products }) => {
+  const { getProducts } = useProducts();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [search, setSearch] = useState(
@@ -33,11 +33,11 @@ const TourList = () => {
         label="Живой поиск туров"
         variant="filled"
         focused
-        sx={{ margin: "2vw", width: "95vw" }}
+        sx={{ backgroundColor: "#cfd8dc", width: "99vw" }}
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <div style={{ display: "flex" }}>
+      <div style={{ backgroundColor: "#b0bec5", display: "flex" }}>
         <div className="blog-left">
           <Grid container>
             {products ? (
@@ -54,8 +54,6 @@ const TourList = () => {
           </Grid>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

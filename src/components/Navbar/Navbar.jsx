@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import logotip from "../../assetcs/images/navbar/Logo.svg";
 import Button from "@mui/material/Button";
-
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuItem from "@mui/material/MenuItem";
 
 import { ADMIN } from "../../helpers/consts";
@@ -17,17 +17,20 @@ import { Link } from "react-router-dom";
 
 import { useAuth } from "../../contexts/AuthContext";
 import style from "../Navbar/Navbar.module.css";
+import { useProducts } from "../../contexts/ProductContext";
+import { Badge } from "@mui/material";
 
 const pages = [
   { name: "Главная", link: "/", id: 1 },
   { name: "О нас", link: "/about", id: 2 },
-  { name: "Контакты", link: "/contact", id: 7 },
+  // { name: "Контакты", link: "/contact", id: 7 },
   { name: "Туры", link: "/products", id: 9 },
 ];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const { cart } = useProducts();
 
   const {
     handleLogout,
@@ -143,6 +146,20 @@ const Navbar = () => {
                 </Button>
               </Link>
             ) : null}
+          </Box>
+          <Box>
+            {email == ADMIN ? null : (
+              <Link to="/cart">
+                <Button sx={{ my: 2, color: "white" }}>
+                  <Badge
+                    badgeContent={cart?.products ? cart.products.length : 0}
+                    color="secondary"
+                  >
+                    <ShoppingCartIcon />
+                  </Badge>
+                </Button>
+              </Link>
+            )}
           </Box>
 
           <Typography variant="h5">

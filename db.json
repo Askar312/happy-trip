@@ -71,6 +71,14 @@
       "picture": "https://avatars.mds.yandex.net/get-zen_doc/3385233/pub_606081360fd2b70ff0cd0bba_60608405188a9f7359c4983a/scale_1200",
       "type": "пеший",
       "id": 9
+    },
+    {
+      "name": "Конный тур в Ала-Арче",
+      "description": "Конный тур в Ала-Арче",
+      "price": 1500,
+      "picture": "https://wildrussia.travel/sites/default/files/images/tours/text_picture/Ala-Archa/hotel.jpg",
+      "type": "конный",
+      "id": 10
     }
   ]
 }

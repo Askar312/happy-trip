@@ -1,0 +1,36 @@
+.pagination {
+  background-color: #90a4ae;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 50px;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.pagination a {
+  padding: 10px;
+  margin: 10px;
+
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.previousBtn {
+  color: #263238;
+}
+.nextBtn {
+  color: #263238;
+}
+.pagination a:hover {
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+
+.activeBtn a {
+  background-color: #e89417;
+}

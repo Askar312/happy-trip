@@ -1,5 +1,6 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
+import CreditCard from "./components/Credit/CreditCard";
 import Login from "./components/Login/Login";
 import EditTour from "./components/Product/EditTour";
 import Hero from "./components/Slider/Hero";
@@ -8,6 +9,7 @@ import { ADMIN } from "./helpers/consts";
 import AboutUsPage from "./pages/AboutUsPage";
 import AdminPage from "./pages/AdminPage";
 import AuthPage from "./pages/AuthPage";
+import CartPage from "./pages/CartPage";
 import ContactsPage from "./pages/ContactsPage";
 import HomePage from "./pages/HomePage";
 import TourDetailsPage from "./pages/TourDetailsPage";
@@ -55,6 +57,16 @@ const MainRoutes = () => {
       link: "/products/:id",
       element: <TourDetailsPage />,
       id: 8,
+    },
+    {
+      link: "/cart",
+      element: <CartPage />,
+      id: 9,
+    },
+    {
+      link: "/credit",
+      element: <CreditCard />,
+      id: 10,
     },
   ];
   const PRIVATE_ROUTES = [

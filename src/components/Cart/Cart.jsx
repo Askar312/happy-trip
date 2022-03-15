@@ -10,7 +10,7 @@ import Paper from "@mui/material/Paper";
 import { useProducts } from "../../contexts/ProductContext";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-
+import "../Cart/Cart.css";
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.black,
@@ -67,36 +67,25 @@ export default function Cart() {
     }
   };
   return (
-    <TableContainer sx={{ marginBottom: 47 }} component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
+    <TableContainer
+      className="cont"
+      sx={{ marginBottom: 49 }}
+      component={Paper}
+    >
+      <Table sx={{ minWidth: 300 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Фотография</StyledTableCell>
-            <StyledTableCell align="right">Наименование</StyledTableCell>
-            <StyledTableCell align="right">Тип</StyledTableCell>
-            <StyledTableCell align="center">Описание</StyledTableCell>
-            <StyledTableCell align="right">Цена</StyledTableCell>
+            <StyledTableCell align="left">Наименование</StyledTableCell>
+
             <StyledTableCell align="right">Количество</StyledTableCell>
-            <StyledTableCell align="right">Общая цена</StyledTableCell>
+
             <StyledTableCell align="right">Удаление</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {cart.products.map((row) => (
             <StyledTableRow key={row.item.name}>
-              <StyledTableCell component="th" scope="row">
-                <img
-                  src={row.item.picture}
-                  alt=""
-                  style={{ width: "100px", height: "100px" }}
-                />
-              </StyledTableCell>
-              <StyledTableCell align="right">{row.item.name}</StyledTableCell>
-              <StyledTableCell align="right">{row.item.type}</StyledTableCell>
-              <StyledTableCell align="right">
-                {row.item.description}
-              </StyledTableCell>
-              <StyledTableCell align="right">{row.item.price}</StyledTableCell>
+              <StyledTableCell align="left">{row.item.name}</StyledTableCell>
               <StyledTableCell align="right">
                 <input
                   type="number"
@@ -108,10 +97,9 @@ export default function Cart() {
                   }
                 />
               </StyledTableCell>{" "}
-              <StyledTableCell align="right">{row.subPrice}</StyledTableCell>
               <StyledTableCell align="right">
                 <Button
-                  sx={{ color: "red", border: 1 }}
+                  sx={{ marginRight: "5px", color: "red", border: 1 }}
                   onClick={() => deleteCartProducts(row.item.id)}
                 >
                   Удалить
@@ -121,9 +109,9 @@ export default function Cart() {
           ))}
         </TableBody>
       </Table>
-      <Link to={"/credit-card"}>
+      <Link to={"/credit"}>
         <Button
-          sx={{ color: "red", border: 1, my: 1, mx: 1 }}
+          sx={{ width: "200px", color: "red", border: 1, my: 1, mx: 1 }}
           onClick={cartCleaner}
         >
           Купить за {cart.totalPrice} сом
