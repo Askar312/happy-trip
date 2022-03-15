@@ -15,7 +15,11 @@ const Footer = () => {
           <li onClick={() => navigate("/")}>Главная</li>
           <li onClick={() => navigate("/about")}>О нас</li>
           <li onClick={() => navigate("/slide")}>Фотографии</li>
-          <li onClick={() => navigate("/stock")}>Акции</li>
+          <li>
+            <a target="_blank" href="https://web.telegram.org/z/#1971286174">
+              Telegram bot
+            </a>
+          </li>
         </ul>
         <ul>
           <li>Контакты</li>

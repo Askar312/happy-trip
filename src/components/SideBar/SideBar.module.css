@@ -1,0 +1,11 @@
+.sideBar {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #212121;
+}
+.inpBar {
+  color: rgb(0, 122, 230);
+}
+.radioInp {
+  color: rgb(241, 109, 109);
+}

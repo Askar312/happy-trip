@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
 
-const AddTour = () => {
-  const { addTour } = useProducts();
+const AddProduct = () => {
+  const { addProduct } = useProducts();
 
   const navigate = useNavigate();
 
@@ -37,8 +37,7 @@ const AddTour = () => {
   return (
     <Box
       sx={{
-        bgcolor: "#ffffff",
-        width: "100vw",
+        bgcolor: "rgb(207, 201, 201)",
         height: "100vh",
         padding: "20vh auto",
       }}
@@ -55,7 +54,7 @@ const AddTour = () => {
           margin: "10vh auto",
           boxShadow: 3,
           borderRadius: 3,
-          bgcolor: "#ffffff",
+          bgcolor: "#f3e5f5",
         }}
       >
         <form>
@@ -63,7 +62,7 @@ const AddTour = () => {
             my="10px"
             fullWidth
             id="outlined-basic"
-            label="НАЗВАНИЕ ТУРА"
+            label="НАЗВАНИЕ"
             variant="outlined"
             name="name"
             onChange={handleInp}
@@ -71,7 +70,7 @@ const AddTour = () => {
           <TextField
             fullWidth
             id="outlined-basic"
-            label="ОПИСАНИЕ ТУРА"
+            label="ОПИСАНИЕ"
             variant="outlined"
             name="description"
             onChange={handleInp}
@@ -79,7 +78,7 @@ const AddTour = () => {
           <TextField
             fullWidth
             id="outlined-basic"
-            label="ЦЕНА ТУРА"
+            label="ЦЕНА"
             variant="outlined"
             name="price"
             onChange={handleInp}
@@ -95,7 +94,7 @@ const AddTour = () => {
           <TextField
             fullWidth
             id="outlined-basic"
-            label="ТИП ТУРА"
+            label="ТИП"
             variant="outlined"
             name="type"
             onChange={handleInp}
@@ -104,7 +103,7 @@ const AddTour = () => {
             <Button
               id="button"
               sx={{
-                bgcolor: "#263201",
+                bgcolor: "#263238",
                 borderColor: "error.main",
                 fontFamily: "Monospace",
               }}
@@ -113,12 +112,12 @@ const AddTour = () => {
               size="large"
               fullWidth
               onClick={() => {
-                addTour(product);
+                addProduct(product);
 
                 navigate("/products");
               }}
             >
-              Добавить Тур!
+              Добавить Продукт
             </Button>
           </Stack>
         </form>
@@ -127,4 +126,4 @@ const AddTour = () => {
   );
 };
 
-export default AddTour;
+export default AddProduct;

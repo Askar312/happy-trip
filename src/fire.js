@@ -3,12 +3,12 @@ import "firebase/compat/app";
 import "firebase/compat/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCvO20G6wU0zqU5pnFAA-4zwEcF9BrGeYg",
-  authDomain: "podfontilo-project-mentor.firebaseapp.com",
-  projectId: "podfontilo-project-mentor",
-  storageBucket: "podfontilo-project-mentor.appspot.com",
-  messagingSenderId: "12345762441",
-  appId: "1:12345762441:web:2176b60167af0411001c58",
+  apiKey: "AIzaSyBKIzIOvyXwmQvrkd98D7TkE0kuucgHdDQ",
+  authDomain: "happytrip-c5ae4.firebaseapp.com",
+  projectId: "happytrip-c5ae4",
+  storageBucket: "happytrip-c5ae4.appspot.com",
+  messagingSenderId: "89715648299",
+  appId: "1:89715648299:web:2ebac01ca410a95850876e",
 };
 
 const fire = firebase.initializeApp(firebaseConfig);

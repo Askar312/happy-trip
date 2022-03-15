@@ -73,7 +73,14 @@ const AboutUs = () => {
         </h4>
       </div>
       <Link to="/slide">
-        <Button className={style.aboutButton}>Топ 20 фото</Button>
+        <Button
+          variant="outlined"
+          color="error"
+          className={style.aboutButton}
+          sx={{ marginLeft: "40vw" }}
+        >
+          Топ 20 фото
+        </Button>
       </Link>
       <Footer />
     </div>

@@ -19,13 +19,16 @@ export default function ActionAreaCard() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              2-х дневный тур в Чон-Кемин
+              Конный тур в Чон-Кемин
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Чон-Кемин – долина, между горами к Северу от Иссык-Куля и
               Казахстаном. Здесь имеется множество маршрутов для пеших и конных
               прогулок. Идеальное место для короткого отдыха во время выходных
               дней.
+            </Typography>
+            <Typography gutterBottom variant="h5" component="div">
+              Цена 1800 KGS
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -50,6 +53,9 @@ export default function ActionAreaCard() {
               эдельвейсы, одуванчики, альпийские астры, луковичные и травянистые
               первоцветы.
             </Typography>
+            <Typography gutterBottom variant="h5" component="div">
+              Цена 2500 KGS
+            </Typography>
           </CardContent>
         </CardActionArea>
       </Card>
@@ -63,14 +69,15 @@ export default function ActionAreaCard() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Однодневный тур в природный парк Ала-Арча
+              Тур в природный парк Ала-Арча
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Национальный парк Ала-Арча - это альпийский природный парк в горах
               Тянь-Шаня. Всего в 40 минутах езды от Бишкека вы окунитесь в
-              захватывающий вид на природу - небесные горы, покрытые
-              можжевельником, кристально чистые реки, редкие растения и диких
-              животных.
+              захватывающий вид на природу - небесные горы.
+            </Typography>
+            <Typography gutterBottom variant="h5" component="div">
+              Цена 500 KGS
             </Typography>
           </CardContent>
         </CardActionArea>
