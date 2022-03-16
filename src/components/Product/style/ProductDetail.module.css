@@ -8,6 +8,11 @@
   color: black;
   text-align: center;
 }
+.pDetails {
+  margin-right: 60px;
+
+  color: black;
+}
 .detailSpan {
   margin-left: 10vw;
   color: red;

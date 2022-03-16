@@ -11,7 +11,7 @@ import logotip from "../../assetcs/images/navbar/Logo.svg";
 import Button from "@mui/material/Button";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import MenuItem from "@mui/material/MenuItem";
-
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import { ADMIN } from "../../helpers/consts";
 import { Link } from "react-router-dom";
 
@@ -23,7 +23,7 @@ import { Badge } from "@mui/material";
 const pages = [
   { name: "Главная", link: "/", id: 1 },
   { name: "О нас", link: "/about", id: 2 },
-  // { name: "Контакты", link: "/contact", id: 7 },
+  { name: "Контакты", link: "/contact", id: 7 },
   { name: "Туры", link: "/products", id: 9 },
 ];
 
@@ -31,6 +31,7 @@ const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const { cart } = useProducts();
+  const { car } = useProducts();
 
   const {
     handleLogout,
@@ -161,17 +162,32 @@ const Navbar = () => {
               </Link>
             )}
           </Box>
+          <Box>
+            {email == ADMIN ? null : (
+              <Link to="/car">
+                <Button sx={{ color: "white" }}>
+                  <Badge
+                    className={style.favIcon}
+                    badgeContent={car?.products ? car.products.length : 0}
+                    color="secondary"
+                  >
+                    <FavoriteIcon />
+                  </Badge>
+                </Button>
+              </Link>
+            )}
+          </Box>
 
           <Typography variant="h5">
             {email ? (
               <Link to="/">
                 <Button
-                  className="page-btn"
+                  className={style.pageBtn}
                   sx={{
                     color: "white",
                     display: "block",
                     fontSize: 10,
-                    padding: "0",
+                    marginLeft: -6,
                   }}
                   onClick={handleLogout}
                 >
@@ -183,12 +199,12 @@ const Navbar = () => {
             {email ? null : (
               <Link to="/auth">
                 <Button
-                  className="page-btn"
+                  className={style.pageBtn}
                   sx={{
                     color: "white",
                     display: "block",
                     fontSize: 10,
-                    padding: "0",
+                    marginLeft: -6,
                   }}
                   onClick={handleLogout}
                 >

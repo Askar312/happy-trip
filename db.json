@@ -6,15 +6,17 @@
       "price": "500",
       "picture": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Ala_archa.JPG",
       "type": "пеший",
-      "id": 1
+      "id": 1,
+      "likes": 6
     },
     {
       "name": "Ак-Тюз + 5 локации",
       "description": "📍Ведь всего за 1️⃣ день мы с вами посетим целых 5️⃣ локаций😳  1️⃣ Большой Скворечник 2️⃣ Озеро Кичи-Кемин 3️⃣ Фонтан высотой 20 метров 4️⃣ Берёзовый лес 5️⃣ Изумрудное Озеро",
-      "price": "800",
+      "price": "900",
       "picture": "https://farm2.staticflickr.com/1487/24229475059_8e7004e29f_b.jpg",
       "type": "пеший",
-      "id": 2
+      "id": 2,
+      "likes": 0
     },
     {
       "name": "Конный тур в Чон-Кемине",
@@ -22,7 +24,8 @@
       "price": 1800,
       "picture": "https://concept.kg/media/tours/inb/photos/horses2.jpg",
       "type": "конный",
-      "id": 3
+      "id": 3,
+      "likes": 2
     },
     {
       "name": "Велозаброска в Кегети",
@@ -30,7 +33,8 @@
       "price": 1200,
       "picture": "http://img-fotki.yandex.ru/get/6610/122360409.2b/0_85fe6_774c7d88_XL.jpg",
       "type": "вело",
-      "id": 4
+      "id": 4,
+      "likes": 2
     },
     {
       "name": "Велозаброска в Белогорку",
@@ -38,7 +42,8 @@
       "price": 800,
       "picture": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFhYZGRgaGBgaGhocGhkaGBoYGBkZGRkZGRwcIS4lHB4rHxgZJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHzQsJCU0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALgBEgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAECAwUGBwj/xAA+EAACAQMCAwYEAwcDAwUBAAABAhEAAyESMQRBUQUGEyJhcTKBkaEHscEUI0JSYtHwcpLhFYLxM6KywtKT/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAJREAAgICAwACAgIDAAAAAAAAAAECERIhAzFBIlETYTKBIzNC/9oADAMBAAIRAxEAPwDk0JFXXCDECDV/7MufMfnTCyeWa9Rw2VIpohEfrFMqRRKMaNlRS9g8z86rbhyN6OLk8hVbJRMOgUJUlt0SEqaIOlWyAwSpBKMWzU1simRKAhbqYt0UbYpBatigTRThKLNuohKWGigJU1t1eLdSVKlgpCVNLROwq9Uq+3bJx+VLKDLwpqX7P6ij04Zef51aNA5D3jNTIUZfhjrU1tf0n51oax71J3XkKZEozfDbpFSWwTzo4J/Sfyq62g9qZBICXg/WpeAooniL0YEfKg3uE0VsraRW5HKqTV3h0vDrSMtgxSmCUV4dP4dWyA2mnFui14c1PwKlgB0U4t0YbdMUpYA/DpUXopVbKc7ZSZkTWvwd1AoBAB9KzVSrbciuLVm4yo35QjKgiKDu8BbbKSv1/WrOCvgxiCKvucYoMEbc9657XR1tNbMN7BFRCVs8SyOJ1mekVn6a6RZykqKNFS01eEp/Dq2Qv7O7OZ8ltKjmck+wp+PS2GCoSYGSeZ9BWhwF0JbeVnyx7FsTWUEzUTtmnSWiCrSKUQlurPBq2ZoECVznF957YLaJdVmSBIYjAUHZV56vTG8jquI4UsjKMFlYA9CQRXk+vw2ZfN5G046j4vvP0Fc5ydaOnGlds6ru33l8S4VvnSpVtOkDDASuACzdIx7iussaXAYGRXl/B8fZBBezqYHBVtE/6oMfau/7s8XrLpAWFRtIbWBqLaSH5yoU56VIyd0yyjqza0L0p5NX+HWFc71cKrFS5IG7qpKzyAjJ55AjG9dDlTZq6TTi3VfZvalm/PhvMbggqfoRWgiUsOIMEq22gHOrCgptNLAxeqXzV2mmFuhGD6KfRRS2qsW11q2ZoD0U2ii/Dq1LQG9LFAfhGP1qdrhhuaNa3O/0FWLaHQUyNUAaKiyVosnrUU4cmllAks072a2bPZxIk4qq5wYHOpkXFmP4Qpq0/wBlp6ZGcTjFt1YqUWLIqxeHpkUFRKs0UUOGq9OEbkp+lZckVJgAtUvCNaycC0atJirE7PbngVMy4sx1tUvDNb3/AE4czRF/sxXUaIDfn71M0XFnPWjAI6x9qZ1k7VpcRwDIYIqo2Iq2ZdgyCr7a1bbtUQvD0sIHNiRXiPbHEs/EXC4zraV2EqdMGI5CvceJunWLSyGZSSQQConSIJUjUTMSD8JrK7c4FUVm0agT+9VwNbq0fFkiQYyuPOpGCVXL2dYqtnm3A93bvEO3hpC6Q8RMErhZ6FtuRmvSO7VkeBKKVRnYqDMgCFIg5GVbFcHYV7V0qjkIV+ahWwAeQ85+pq/tDtK4lxQtzQrKSCkawNypZpIaREggelc/lGWz0uEOSNRe/wBnofaaxZuHpbf/AOBrxW5OBykT8ga6nhe0eDFq6pN4XmRgtw3HYuxBgOJ05JjAOD865lxn5/3rvxyy2cHxuGmdv+HyeZvl+Vd34dcP3AMFo3n8lJj5kRXpQ4eo3tnOa6M3wakLFaY4epDh6lmKMzwKmvD1pJw9WrYpkMTKXh6l4HpWp4NLwaZFozl4f0qS8LWkLNOtqmQxAk4cdKmbM0aLVSFullxM4cNV1izFGeHS8OlhRBXY1RpNHNbqJtUDTAvkKei/Bp6WKZyicJ61cnBf5n+1aosirltr1rk5nRQRm27bDnIrW4Vl6RPWm0L1p9S1lys0kkWMRVFxegmuf4Ptx7nHtZSDZRG1yuxU6ZUjMljscQJHOustpIms5UXszk4Z3JCjYe1aFvgioDECQKJ4VAGMYou+CF8ok1cr6JVdnM8W5flH51QvC0Zxt5LZUXGVC7hFBOWdtlUbk77VdaQMAwIIIBBGxByCK6KRzasAThaIW11opwFEtj887QOdZ/B8St7WxYBEcoy5EMu4adzz6VmXJijcONtmFw3DC7xj3DkAqFIPwqqgE42kyZ9RWZ347YVriWFM6AWJ3OlsKhPOIJ/7h7nqbt2zcuhOHP7wfEygRp2PiEDbpJya8oLM73dRl0v3UcneVcx9oHyrlxOUpZM9E8VFIrSGut6IPuTB+32oPtKyXVmkBVBgk/ERuT6Yig+P7Ra3eOnYqA31aCPUTWuCHQaYKlYGOW1d5PZwTro5MDzAeoo5re3v+hoZrZV9LZZXgnrzBPXn9KO05GOf6GunHpCUsnZ1Pc/Wr23B8gvIHgwYOJPUDf5c69lFuvKO4zq9xbENLGdUeVTB0557E4GIr1/h7BVQCZI/L/MVmUvkSSKRbqQt0VoqQt1izNAy26cW6JFun0UyLQL4dOLdFC3UhbpkKBRbqQtUSEqXh0yFA4t0vDogW6fTTIUDeHSNuidNNopkKBvDpeFROilFMi0DeHSomKVMhRhLZqY4ejFtirBbFebI64gS2Kz+8PGpw/DvdYhYGlZxLN5VA+Zn5VvhBQXbPYtnirRs3l1ISrYJBDAyGBHOikGkcL3U4/huFRm4h9F28RcjSzRbj92NSgg4LN/3RyrbbvjwROLwA/0v/wDmgrn4XcGzEs/Een70bch8NBdsfhnwtuw9y3b4i66rK2xehmMiQPIcgSY5xHOqqfpGdEe9nDhf3Ti5ddG8JIZQ7wdCFmAVZIjJG9cTwvfXj04fiGv3gl3T+6Bsnysbi+fVGjTpZlBhgSFP8J1ckO7vGW01LwXFAgkk6SfMuk6tJU4mYGmcDzHkDe4tjFq/woa82lVDeKlwNqlPKGGCHI0xnVPKu0VRhuzS7l2TxvGFb9+4jOwdXU/vDcty4bU3MQRJBAkbYr2j/rXDJaFzxkZNLlWBBNwoSH0xALagZjn0rjOD7iDhzZa6GNx2K6bT3WRRpJckB1edOJXVmNqy+1+7PF2SE4e1be07ki6f3tu3rbSzE3Qz22WJJ5Zyxmj2wEDvHdvu92290J5vLZu2/wB2igupNp7ZBMKfPMyOUgHpe7PdxL1jXcuXHR3dmT/0yXEI3iFDJMp/CQPeheD/AA3uWlD2+JAvkabvkCWnBLMSFUSCG0EHno5T5e97L4IWbSWhB0qATEam3Zo6liT86zKV6CVbT/oq4Ls23aUJbREQSdKKAJO5Mbn1NeUd9uzF4fjnYExxKC6ByDqStwD1Plb/ALq9oxXk/wCNtxAOHYR4q6tJByFYjB5QQrUi7YZ5F2mha4xxHIkgDA2nrWr3cuMko2zKHXM4ODttypnIbUpgLM7ZOKq4ZQt+2AAAVYHAG0nP0Fbuy1QPxYniG/1r/wDE0WFyPnQIfXdLDYsxH+kAhf1rURcj57fKu0HojR6H+G3CBnScefV76VJFesC3XlX4bZvqoTV5XZnxCwFCqeYJkx7GvWQK4TfyDIaBThBU6VYsEdIpaalSoBop4pUqAUUopUqtkFFKKVKlgVKnpUA1NFPSqFGilT0qlgzw9TUzypK1MGNeazqXBDTFTSVjWPx3ezgrLFbvE2lYSCNUkEbjE59Kqt9EbaNmKlomuA7U/E3h7bBLds3Bq8zagoC/zQQTnkDBNd5wt9XRXUgqwBUjmCJFaprsjYD3hsXX4a8thtF1rbBGEyGjlGQTkAjaZrwn8Nltp2mp44sjqGKeLKxfMaA+vYwzET/Fpr6JnNeD/inwA/6qpsufEe2jvJJ0XEDQFgEg6EQgCTPuK7ccu0YZ7J2ppHEcKWwddxU6amsvj3hWj50VpC3dMeW4rEjlqQqJj1Dwf9IrEucY93heHutGtbiFpBAe4VZE09Fa46fIkVoXeM1uDby2gqh5S+lndv6UAT3LFd6WKC+zF/dgfys6gnJ0o7IpJ5nSozRTCqrNsIqqJhVAE74ESTzNT11hyt6KkywCvG/xXuq/GqrpoSzZDM+rNzWWKADkAysOpJI6V7GteQ/jjwSlU4gMJUrZZYyW81xDP9Ks/wD/AEFb43sjPOE7QtsuV0kbcyByzvtQPG3IKkEwQ2RvBJkD8qzBTk12rYy0H8NfAcEmAAQBH0HrvWknGwR+7uc/4fb1rO7ESbnspP5D9a6JILbjbr1P/FdEG72d7+F3alhrnhzpuZKqylWOD8JO+AcA16zXnv4ecGhCuyKWUkqxAkGCMHcYJFegMJrzzfyZX4VPdzA+dWrVPgwZFXKa5OW9jwlSpqetKRB6VNSq2QVKlSpYFSpUqWB6VNSpYFSpqVSyj0qalUsAYirSoIrzriO9FxiRr0+kBSPp/es8drOBi6wHox/81yo6s9Mu8QiZd1X/AFED868Q7e7jNe452s37fg3Ha4XdiptljqZSpALGSYjfnFbHFcWZ+IkkZY79YzVZ4ghYDMTInePkK6QeO0RxsC47s+xwTqzWytjyW9cpfLsY1XWOqFcaSV06QAdjkH1vsvjOGS2tu3cUoogS2YmczHWvGe9F/iHtaFXUjSLhOkkBdLD4tjzn0G1CdyeKvMzk3CUVdIVmJ80jSQOQ0gjpkVpxyjbZPaPeeN7Xs27b3WddKKzHzDZRMD1r5l7T7VuXr78Sx/eNc1z/ACmZUD0UAAegrtO93HubBt7aiJ9VWCR+VcDbUlWJGDt/25/tTjVbIz0PuT3pvPbfhQy+IxU2SSQiaTrGlF8qBSNWqB6ziPXOw24dLVsWrisHVdLMy63GmRIEZiTAGM43rxPuRxT3FuaFAv21bTf0FtNtyA2uMEr/AAz/ADEbUV2rwvEItm4rpcZHmSuhlbUdRhTpKldMggkSelJfyaFKke9wKQUV5e/FX7Whg+jWgcBGJTzbiSBMGQZHKibHeu+PicN7iPusVhIjVHpNeJ/i9w95bTtcEI/HFreVMr+zIgODjNs4PWuxs96lb4iw6w0ifrXI/irxtu9waaH1Ml9WIg/CUdTv6kV1h2Rnj9KlUwMH0ruZGViK9s7jfh/wvEcHav30bW+ssA9xcBtKiAwAjSeX8XpXjfZ9jW6r129YzFfR/cZyvBWVEHytP+rW0/esTZpdGj2F3R4ThG12LbKxESblxsezMR9q36Ft8QOYq3xxXLYLaYVV4oNP4o61KBbSqnxvao+L/mapAilQxvUwuH1pTAVSoT9oPSpeO3QVUhYTSoX9pbmo+tWLxA5499qtAupVFXB2IPzqdTEDUqelTEDUqVKlA8Xc8sfKqOIvkYBE8z0npHOpNxZYch7CPrQ7p1EdcTP+YrypUzuolIJO5J9/vPX3pG5GwckCYVScTnO2/KZ9KfwxPMT9CZk1u9iuhSGQ6w7Ajc6HKnUOiyxHua6Jlf0ch2x24r23sorrcaE0MPMScZmCDmPp0oruN3bOou7ujaGXQygCdekkk/whjbJjk+9S7a7fttxB/cq5R1Cu0FlZF0HRzIlQ3LIrN7Z7V13GZbjIUsEAa4YuzAm2QDmQuVzmu8fqjk/uwftjiGv3/CTJnSP9I3Mj1nNP3g4UW7SIBGkPPWSEmf8AbVndThQNVxp16tMSPKCFI1DkTPpzq3vh8C8/iH2GJ+VYqpKI/wCbDfw3482SxwULwV5EMsMvzGPeK2O3uJ8DiFt7o3nDldSG0wARnE7S6yeUGub7oMPCfcS//wBV5/Oge8vbge4wST+68Mk/DMksVHQg/YdKuOUmLpJhfbHei6ha0fiRomGRkKlwUC6ipUnzGBnEkxWC3a9x2IljIgkDMdQMwfWs5lJzImMyRJIEn/Odb/d2wjqVdHYD+MXGVEgEhYHxE++K6YxijOTbBE464CW848ukErgDr6H1oq32nrUK/mSIfcliMg5ODtEYFbZ7Ns6VhSDiSGcHlOxoPiexlJOk8pzhs8g4E/XVUtFMe52UjqGskgkxocjUT0TTk55GD+s+HtoeFuBlAdG6Q2c++1K9ZZGkiY31DYf1DZl9R15Vr9ldpWXM8SiXDDoBBVoIIDFthE4nGc9aNugkjj+EuaXVuhH0516t2F2iyIpRyJJ2ODk8tjQXYPZdnWk2bbeZR5lVhkjcH3rou9/Bi3fEAKjImnSAFESpEDAgj7isuakzcuNxXZp8J3ucQHQMObKYPvG35Vu8N3hsOMXFHo3l+k7/ACrzXlO9QW4DMGQOeaiaObTPW7XFK6hlYMp2IOKi/FovxOo92A/OvLEuRzqxbp/4iqSj0W/25ZT+MN6L5vuMfehx3ms9H/2j+9cSnEDmRVvirPKpkhizth3gsGMsPXTt+tXJ21YP8f8A7WH6VwniU5c0sUegpx9tjCuhJ/qEn5GrQ07NOYwefMYrzfUYnG/+GiuA7Re04AY6Z8yzuMfetpGbO/8Ac0zIKDs8QrgMGBB2/samSOtKAQqCpKkelCKBSL1aKHam/mP1pC4w/iNA+J70EO2bGs2/EXWsyJiI07k4/iFQWb37U38w+1Ksb/qVr+df9wpVRs8uAGomd+Q/80QhDCenPoaBVoJO2YknECuq4bycMruMXHfyxkjS2ifWQD7RXlkj0pnP3UKgEZztgwNsj3/Ot7hrb2VUjD3EBOBg5xEZAIHzNZ/DcMxhxswMDln9M0fxN2cvusnAjfMZ5ZrX6B5p2FYFx31ZAVj08zEhZ9BBMc8dKD4HWreLpIWSCyASNOkEAn4RkZrR7L4hLHEcQHOkDVGwn94CAI56WJgTtT8Jx6pbAdDpbxGkx5yxPlC77HcxtXo34cQjs+6vDcWpVv3V8QZbVBJxJ3OYMnk1F9/LYFpGgCXj6qT+lcjevSNIEL8SgiSIkaZ9M1vdtdoePwNtiZZbiq3WQjiT74qOO0yX2R7Mvm3wTNPxuy+owJII6AGuZAkgjcmAP+TiMxWjxVyOGtKDubhkc5aCP/b960e7nBqwullldAt43GNTEesxVtRTkxTejQ7F7HUWgzICz6wdWSpQlWQdOs853qHYKCxxD8M/wXoFtjHlfe2SehMofnRPd28zm5wrOQ8B7WBDOgAYblpZBPSVB98/tngXYFiG1oTgAz5TkiPt7VjL5U+marVhnE8SUJXTDKYadwQYII5QRQf7U7SdUieRiMDlRpDcVbXiFUeIxKXCGxrXQEbSfh1AyckEycUy9h3pGpVGIBDDflI/zaucpJabFA1k6vKd916zzIPz+k70JxPBNbbWAOogDTOMgch6cvaK3E7F8M6y0gbD1I0yDMnfoORo7gOFS6Tac6Q8hT/I5wrHrnBHQketWM150bUbRn9i9pFgut11yREHXEyJjGJOwyPaa7HtSw3EcJ4hc67NyTP8lwpj5Mq/U15k6vw10o6jUj6WXO6vp5b5X2MV6R3W4xXsX0KlQ1ksBG2kEgQM4I+winIqVosXaxZgWeFaJdyRmQJA5yZnfIoqyux35jl9vlWilk7D194GDg4j51a1ogAjn6YPLG31ryubfgT/AEZKWwDIUjM0xXyhR0gAydtgSM1uC23MqZG3mB6ZxE/3qprZUjVAPzj771l8j+imUvDgjNsE+hORP9qmeGGpTobmJlsfeIrYS22+0e0H2+lK45AkHPXGP8ms/kZKM5+BJkAsPmP151R/091Mhz7EVroBnzH/AJ5VW4UEEk+7fpUzl6yUB27NzYlSfnvRKIAIJz1x/n1qxyBseXOYHtHtVJwSOvMgDn1nFdFzzS0w4oM7P7RKSFIO2Dj50Ye23jOld+R/vmsZnGI9PpGQT7RUEvzOkz1nb2mp+ab9CjE2G7ZckgESI2HWqX7ZvGPPE4wB/aspbsSRzGYM9aqTiQSRk4zkwSTnHyp+SfrYxiad7tS5trPtiCDIM9KAIQEnSJ5433yScnrvQq8RJIgbwMGfXJ5+lRuM5+87/SjbfbYpIL1DoPp/zTUL4f8AV9qVKFEuA4UO4V1lNJZiZ2xEHmSWH0NW8TxV13DMfKMKukiBzkHrIM+lGNxA67+5OJn5U5udek9a6Zui2EcDcC4OwHlU4KnBZRmCuTymge0rjO0ANHtMk9fbFWLeEdcdImOhmotekEc8H7dDtR8jFnD9uWWtcRqIAF1SJPlEgFCZEkbqfnT9mcGrhVuZLBW8ohiGXWNRHmbfYdNq2O9vCF7JcAMbZBwCDpbDCQfn8q5FbFzQL+himrSCG8oCgKVJ+IYMQeRr1ccs4dnJ9lvHWrYvOuSnmZNOMkCR7CM0DxN5QrIhbSShhonUshjjYZMelF8fYZsLwrW4yYDsPhkZI5iDNZRtGdMEMDEc5mIjrtXaPRGHXbUrbB2FskdC3iMP1rtu5gUcOzkGWuOeXpseuK5LjOAu2vDFzyakfQpB1AAkgEGILMMe9dT3HKtadWAlbrcjqhgsDHrqrz8/+u0WPY/enhSCnEoSGtlNQ56VaQSPSQIiIJOa3xxC3VS+mEuCQIIKuMNbgnkwwvRgaKu8KjppaQCCsEMRpMkqYAJkcsiuK7N4z9hvXuGvFnssupCNYKxkXEVozAIIO5SJGDXKH+SGPq6NtUx+Bufs/HNbAK2rrwobyrrWCoHSHJX2Ycq6niUyEHxFs9YXJ9s4+c8qwe8LW+JHhIV1wjrcfyq1oDLoTvnUDHqIkQH7tcebhZbgFxrPl8QFm1rsqhSJaAuJ9zk5vLBygpPtETrRq8enkZhBPpMASIg7R1if0GXwxyCTz2FbnaD6kYf0MYbBHTygYFYfAWS7qs7kDoM4rPFqJ1gT/ESwhuJdSBNpNaiANYGGIH9BUeyGs/uhx5RyNckjTBk4Ywecck/w1t94LXicPd0FdNsqyjE+WVwB/TP+GuF4F9DjyzOBmQJ8vsRJFd4/KGzlJ/K0epftYMYgRERz6SPSBTm4xEA4PKTIjST74P2oaxfRo04BAyQMGIiCPX86dwZGlojeQR0gQJOCK+dJNaN2wl3HkyY2AA+cg+mc1B7pGThucwANtyN9xQzjC/xRg4j1yfrj+oVWy6uYOIB3H+T1rLsWW/tzkZKjkCCcyYwPmasKiBrcECDv+fTnVKCCQTjaIUg4AJk7bzj2qJ4a0p1ewOdxt9p/OipspZ4hJhTC6o23M/SkwA3MnVnkJkiJqi9eVAYPlyIGNlwZ22nenVy0y0DIGcyon9OfL3pvoyWs8wDBAEnO/XBP5dahcuMvLkDO8bxvvvv61G5xABMjAmfVdwfaf+KgLkRqB5dCefXrj6+la6BW4ds788Cd435DpUQ2o4MDIMmBVnF3BpIQEzyOSFg9MbEfehrbNMTEg45+gUf5tW8UGy9rTE6Q2k7RpJEgxEjnPp+VN4TaSVIGBnLHG/pE0PdukRIiCB/wOhBBqziGLCJEZz7e3odvlRFsjecRGrMdBM7Hans4OWxyESTmJ3jaq7XDIuS31PUTuSIFJpyFAiJwRmeWdziq0UsYrJ3+9Kq/2v8AqP8AuH9qVa/olh5YBSeZiAMz6D8qp/aIMY3HPPlk+8ZA5UO1xZiZOeYnlvmoCCx295ggk+mCccqqRAu3fUiZjIOD6+3WauW+dyBEmY8pnb58vvWdbKgkEH+kAyY3nfAn89+VXJxCge3vv6/PcVHEga/EAyhEagdokg8uu0Z9+tcdwPA6OIfhXuuiXJVApAVtRGnUCOYBXUBMgDY10vDcS4B2ExB8pMAev0x1FZneXgfFQFdXiJtAOV2IzEZH1FdeGVOn6R/ZodkIUV7RJIRoWZnw2+EHJmJgjbHpXF9uWfC4gkQY0sDLMCVgRJ32AOTkHbYb3Y/Gm8VPi6bi2yjCP/USQUZCSIaTn3JAmQM7vqyzZUCCqNjopbE/MNXaCceSn6R7Rud8GDWrN9SdKspY5HldRJWeRk/XbFZncvtNLVx1bKMoYYO6HSMDMnpk1u3bKvwugqGLWlyxkyFAVp2EGOXI1wtq41tlY6gVYo4kLt5WUQZ+H7g1ONKUHB+BupWdtd72EXtCWzo16JHxdG06ZmOWZjMbUR23+z3Ec3ULMFKIQpZg7wAFMRq1ad9s9ar4Th7dtdS5Qid5L6gCD99vQ0Q+knzDAzAIGT1nHw/nz5eZuKknFVRrb7Mbgux2N5XdwdIZwgRFRAQFXyqNAMDOlYlZzvW3wwhf3WNLgQAgViR0CxqOo88n61Tb4pC4LQQfLAklcgjYCR5T/uxNWXOKtIS6uETU5ElpJUkSsDcrp+hPOt/PkJpBLMrSHMawYOraQwhVnoJkjl6U/Y3Yiq5fXhEd825+BGbefT1rFfilZ00ozQZDuRb0zuUDZ2MQQMYxvWjwnaR8REyEuB7dwrp0kOunzEgwYJ/v19UOOEYO+yKUr0Nx3aRKXEJBBtuIEblWzOCdzg+kVwK3mD4wQR0ggEEHbqJrq+M7JFhLxd2ZwrqFOnTqI0gadMyGOnfkTI2rir90F8+mfWBM+2aQaa14Rnp3AWgURiJYgEGTJnp02Jq9AdRiNU6oJPmgTkg7468xWVwF/SiD+gdcDSDO0b/ejF4nSdOdxBMiJMAx7D8/evnT/k3+zpZoLZWSJIJE4+4yYxt9RVLlYOidIIHQyZAk7cpzVK3mIMhpAxIn7dTMfOpFy2wxO2CR6npAO8+lZxsEkcGZMqZjbkTHqTtjMT9aLpDAEJ6mAeuMmqnvgkGQcmCd5B5nfY7f4HS8pJUnYDT1InPtAz61caYCOItoVGF5SGjkPzg1Vf4lhChszIxGdumcYob9pEiABJyQcEnbAGDnehLV5tepsLsDP8XwiOU4BP6VrHxBs0LtudsKQQojkfLBYjET1qgBmHkeDOmCp5DkI/WqhxS64zGenTpOftUbV0wek7GPzjaqkhZbr0SCMQIzk5++ZqpOPzlBvjUATtGQ8iM1TxJLGM4Pp8OBj6/eq0Q89QAPl2z0k8qjin0Sw25cV1B1+YnQRpgjGDzkR7EdKB4pwDA8oJnHOMn5f56U/iAwQpUySZ65zIkGZ3FTILKdJAUHOrcDBxA32+lVRrQ7HS6BG7YjfG2T+lXK0QGQSQD8XXYwN96y7zsCYBY9MaTOBvuPX/irODvZ1Or7nyqdJABwQxBg46HH26Yugaf7P6p9f+KVV6rX814ekWzHznNKs3H6Yoe7GWVlxgqGAaYGYHLbNCOcTqgDYepyftT0q1FWQbieKgBUMmDMgKM9KpuvcKkK4A/ID++1KlW/Qy3hLnk0sRqidWZEbbbjAH/mlcuO2qDEgxnzE4z7T+dNSrCKc52mLiOWYBST/DiTGSI2nEiIP5i8HwpvONwJlmJ2HMknn0FKlXrUnjZzO1v9sIg8plhA5GMgZ3nb7CuW7T0NdLKulWBDE8nmdUcthPzpUqxxqnoSNHsPtEhTaYnWhlFJHmXnbB21SZHXbpBTcdeK+UTJwYz5vl0+0U9KnLCNlT0RV3ZwdLSSoIyAIjcbj2+1EX+znuIuRCgQ2ZIIBOeW89KelXncmmqBdY7LRVJDaiebTJOo4iTn36VqcJYyDsfi1gAHlAGJ+KNvelSqSk2zokYne/jyFKGS7trYkyQqmRPOS8GecH3PJdncMXuogiGdQZyRnJgZpUq9fHqGjm+z0tLYXAPzP9l26c9qiLy5kCTjckmNvWJO/uPdUq8R0InimDBgCGjMGMZmANjHy/UfiLrbaSIENLAgSN+RHWJ5mlSqpdk8J2iBpAhuX80bkmPnNUkZB3XkYYaTsY9czvTUqnSBE21HwyDGR5ts+h5/nVusaDpLT6EjGCzGMx7/APh6VaQQFcRQS0eUH1M7/TFDiZxA+czkYyREiaVKiBJLhBz6DJx5dsR7jM/3d3YgnVqjI29MdQenzp6VVBFXFMRgGcwTmfNHL1/WkpAAQEneYO2YwflSpURCK3ckkkgmACIP5+tRvMAZkxIJkCGI66eeSPlSpV08A+lf5/z/ALU9KlWaIf/Z",
       "type": "вело",
-      "id": 5
+      "id": 5,
+      "likes": 3
     },
     {
       "name": "Чункурчак Горнолыжная База",
@@ -46,7 +51,8 @@
       "price": 1100,
       "picture": "https://www.open.kg/uploads/posts/2018-03/1521816862_73b1122d480086fb975ddb837a1baaf3.jpg",
       "type": "снег",
-      "id": 6
+      "id": 6,
+      "likes": 2
     },
     {
       "name": "Горнолыжная база КАРАКОЛ",
@@ -54,7 +60,8 @@
       "price": 3800,
       "picture": "https://img.pac.ru/resorts/213181/468911/big/EE34F5487F00010110A091ACD16EADB6.jpg",
       "type": "снег",
-      "id": 7
+      "id": 7,
+      "likes": 5
     },
     {
       "name": "Кок-Мойнок",
@@ -62,7 +69,8 @@
       "price": 400,
       "picture": "https://cs11.pikabu.ru/post_img/big/2018/08/18/10/1534611482195989756.jpg",
       "type": "пеший",
-      "id": 8
+      "id": 8,
+      "likes": 7
     },
     {
       "name": "Конорчёк",
@@ -70,7 +78,8 @@
       "price": 500,
       "picture": "https://avatars.mds.yandex.net/get-zen_doc/3385233/pub_606081360fd2b70ff0cd0bba_60608405188a9f7359c4983a/scale_1200",
       "type": "пеший",
-      "id": 9
+      "id": 9,
+      "likes": 6
     },
     {
       "name": "Конный тур в Ала-Арче",
@@ -78,7 +87,18 @@
       "price": 1500,
       "picture": "https://wildrussia.travel/sites/default/files/images/tours/text_picture/Ala-Archa/hotel.jpg",
       "type": "конный",
-      "id": 10
+      "id": 10,
+      "likes": 4
+    },
+    {
+      "name": "sdfs",
+      "description": "fds",
+      "price": null,
+      "picture": "https://softech.kg/image/cache/0e0cf095b6587e13e786678105a82fc5.jpg",
+      "type": "try",
+      "comments": [],
+      "likes": 0,
+      "id": 12
     }
   ]
 }

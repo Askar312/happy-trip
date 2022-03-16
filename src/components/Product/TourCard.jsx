@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import { useProducts } from "../../contexts/ProductContext";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
-
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import { ADMIN } from "../../helpers/consts";
 import { IconButton } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -16,6 +16,8 @@ import style from "../Product/style/Product.module.css";
 
 export default function MediaCard({ item }) {
   const { deleteProduct, addProductToCart, checkProductInCart } = useProducts();
+  const { deleteProductFav, addProductToCar, checkProductInCar } =
+    useProducts();
   const navigate = useNavigate();
 
   const {
@@ -51,6 +53,16 @@ export default function MediaCard({ item }) {
             <IconButton onClick={() => addProductToCart(item)}>
               <ShoppingCartIcon
                 color={checkProductInCart(item.id) ? "secondary" : ""}
+              />
+            </IconButton>
+          )}
+
+          {email === ADMIN ? (
+            <> </>
+          ) : (
+            <IconButton onClick={() => addProductToCar(item)}>
+              <FavoriteIcon
+                color={checkProductInCar(item.id) ? "secondary" : ""}
               />
             </IconButton>
           )}

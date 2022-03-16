@@ -21,6 +21,8 @@ const AddProduct = () => {
       let obj = {
         ...product,
         [e.target.name]: Number(e.target.value),
+        comments: [],
+        likes: 0,
       };
 
       setProduct(obj);
@@ -28,6 +30,7 @@ const AddProduct = () => {
       let obj = {
         ...product,
         [e.target.name]: e.target.value,
+        comments: [],
       };
 
       setProduct(obj);
@@ -62,7 +65,7 @@ const AddProduct = () => {
             my="10px"
             fullWidth
             id="outlined-basic"
-            label="НАЗВАНИЕ"
+            label="НАЗВАНИЕ ТУРА"
             variant="outlined"
             name="name"
             onChange={handleInp}
@@ -70,7 +73,7 @@ const AddProduct = () => {
           <TextField
             fullWidth
             id="outlined-basic"
-            label="ОПИСАНИЕ"
+            label="ОПИСАНИЕ ТУРА"
             variant="outlined"
             name="description"
             onChange={handleInp}
@@ -78,7 +81,7 @@ const AddProduct = () => {
           <TextField
             fullWidth
             id="outlined-basic"
-            label="ЦЕНА"
+            label="ЦЕНА ТУРА"
             variant="outlined"
             name="price"
             onChange={handleInp}
@@ -117,7 +120,7 @@ const AddProduct = () => {
                 navigate("/products");
               }}
             >
-              Добавить Продукт
+              Добавить ТУР
             </Button>
           </Stack>
         </form>

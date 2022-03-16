@@ -14,6 +14,7 @@ import ContactsPage from "./pages/ContactsPage";
 import HomePage from "./pages/HomePage";
 import TourDetailsPage from "./pages/TourDetailsPage";
 import TourPage from "./pages/TourPage";
+import Car from "../src/components/Car/Car";
 
 const MainRoutes = () => {
   const { user } = useAuth();
@@ -67,6 +68,11 @@ const MainRoutes = () => {
       link: "/credit",
       element: <CreditCard />,
       id: 10,
+    },
+    {
+      link: "/car",
+      element: <Car />,
+      id: 11,
     },
   ];
   const PRIVATE_ROUTES = [

@@ -17,7 +17,8 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     color: theme.palette.common.white,
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 14,
+    fontSize: 18,
+    color: "white",
   },
 }));
 
@@ -85,7 +86,9 @@ export default function Cart() {
         <TableBody>
           {cart.products.map((row) => (
             <StyledTableRow key={row.item.name}>
-              <StyledTableCell align="left">{row.item.name}</StyledTableCell>
+              <StyledTableCell className="textCard" align="left">
+                {row.item.name}
+              </StyledTableCell>
               <StyledTableCell align="right">
                 <input
                   type="number"

@@ -9,6 +9,7 @@ import style from "../Home/style/Section1.module.css";
 export default function ActionAreaCard() {
   return (
     <div className={style.containerSection1}>
+      <h1 className={style.textSec}>Наши актуальные туры</h1>
       <Card sx={{ marginTop: 5, marginBottom: 5, maxWidth: 320 }}>
         <CardActionArea>
           <CardMedia
