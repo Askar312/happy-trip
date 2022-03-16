@@ -14,6 +14,8 @@ const AddProduct = () => {
     price: 0,
     picture: "",
     type: "",
+    comments: [],
+    likes: 0,
   });
 
   const handleInp = (e) => {
@@ -21,8 +23,6 @@ const AddProduct = () => {
       let obj = {
         ...product,
         [e.target.name]: Number(e.target.value),
-        comments: [],
-        likes: 0,
       };
 
       setProduct(obj);
@@ -30,7 +30,6 @@ const AddProduct = () => {
       let obj = {
         ...product,
         [e.target.name]: e.target.value,
-        comments: [],
       };
 
       setProduct(obj);

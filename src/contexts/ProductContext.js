@@ -12,7 +12,6 @@ export const useProducts = () => {
 
 const INIT_STATE = {
   products: [],
-  comments: [],
   productDetails: {},
   cart: JSON.parse(localStorage.getItem("cart")),
 };
@@ -33,8 +32,6 @@ const reducer = (state = INIT_STATE, action) => {
       return { ...state, car: action.payload };
     case ACTIONS.CHANGE_CAR_LENGTH:
       return { ...state, carLength: action.payload };
-    case ACTIONS.GET_COMMENTS:
-      return { ...state, comments: action.payload };
   }
 };
 
@@ -352,32 +349,10 @@ const ProductContextProvider = ({ children }) => {
   //likes end
 
   // ! ===================== comments start======================
-  const getComment = async () => {
-    let { data } = await axios(
-      `${JSON_API_PRODUCTS}/comments${window.location.search}`
-    );
-    dispatch({
-      type: ACTIONS.GET_PRODUCTS,
-      payload: data,
-    });
-  };
-
   const addComment = async (newProduct) => {
-    await axios.post(JSON_API_PRODUCTS, newProduct);
-    getComment();
-  };
+    await axios.post(`${JSON_API_PRODUCTS}/${newProduct.id}`, newProduct);
 
-  const deleteComment = async (id) => {
-    await axios.delete(`${JSON_API_PRODUCTS}/comments${id}`);
-    getComment();
-  };
-
-  const saveEditedComment = async (newProduct) => {
-    await axios.patch(
-      `${JSON_API_PRODUCTS}/comments${newProduct.id}`,
-      newProduct
-    );
-    getComment();
+    getProducts();
   };
   // ! ===================== comment end========================
 
@@ -411,9 +386,6 @@ const ProductContextProvider = ({ children }) => {
     getDetailsOfProduct,
 
     addComment,
-    deleteComment,
-    getComment,
-    saveEditedComment,
   };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>

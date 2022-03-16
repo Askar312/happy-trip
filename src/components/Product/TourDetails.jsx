@@ -1,45 +1,70 @@
-import { Button, Grid, Modal, Stack, TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import React, { useContext, useState } from "react";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { productContext, useProducts } from "../../contexts/ProductContext";
 import style from "../Product/style/ProductDetail.module.css";
 import HeartIcon from "../../assetcs/images/navbar/heart.png";
-import MediaCard from "./TourCard";
+import { useTheme } from "@mui/material/styles";
+
+import { useAuth } from "../../contexts/AuthContext";
 const TourDetails = () => {
-  const { id } = useParams();
-  const { getProductDetails, productDetails, comments, getComment } =
+  const { getProductDetails, saveEditedProduct, productDetails } =
     useProducts();
-  const { addAndDeleteLikes, addComments } = useContext(productContext);
+  const { addAndDeleteLikes } = useContext(productContext);
+  const [com, setCom] = useState({});
+
+  const { user } = useAuth();
+  //coments
+  const handleInput = (e) => {
+    let d = new Date(Date.now());
+    d.toString();
+    setCom({
+      email: user.email,
+      comment: e.target.value,
+      date: new Date().toLocaleString(),
+    });
+  };
+  const theme = useTheme();
+
+  const { id } = useParams();
+
+  const [productComment, setProductComment] = React.useState({
+    comments: "",
+  });
+
+  useEffect(() => {
+    getProductDetails(id);
+  }, []);
 
   useEffect(() => {
     getProductDetails(id);
   }, [id]);
+
   useEffect(() => {
-    getComment(id);
-  }, [id]);
-  //coments
-  const [comment, setComment] = useState({
-    user: "",
-    comment: "",
-  });
-  const handleInp = (e) => {
-    if (e.target.name === "price") {
-      let obj = {
-        ...comment,
-        [e.target.name]: Number(e.target.value),
-      };
+    setProductComment(productDetails);
+  }, [productDetails]);
 
-      setComment(obj);
-    } else {
-      let obj = {
-        ...comment,
-        [e.target.name]: e.target.value,
-      };
+  console.log(productDetails, "from Details");
 
-      setComment(obj);
-    }
+  const sendComment = async (e, id, productos) => {
+    let newComment = [...productos.comments];
+    newComment.push(com);
+    let productWithComment = {
+      ...productos,
+
+      comments: newComment,
+    };
+    const data = await saveEditedProduct(productWithComment);
   };
+
+  console.log(productDetails.comments);
+
+  productDetails && productDetails.comments
+    ? productDetails.comments.map((com) => {
+        console.log(com, "comment@!!");
+      })
+    : console.log("did not work");
   //comments end
 
   return (
@@ -65,73 +90,58 @@ const TourDetails = () => {
             <span className={style.detailSpan}>Описание тура - </span>
             {productDetails.description}
           </h3>
-        </div>
-        <Link to="/products/:id">
-          <p className={style.pDetails}>
-            LIKE-{productDetails.likes}
-            <img
-              style={{ cursor: "pointer" }}
-              onClick={() => addAndDeleteLikes(productDetails)}
-              src={HeartIcon}
-              alt=""
+          <div>
+            <div className={style.coment}>
+              {productDetails && productDetails.comments ? (
+                productDetails.comments.map((com) => (
+                  <div>
+                    <p>{com.email} - user </p>
+                    <p>Оставил коментарий - "{com.comment}"</p>
+                  </div>
+                ))
+              ) : (
+                <p>Пока коментариев нету! Оставтье свой коментарий</p>
+              )}
+            </div>
+            <TextField
+              fullWidth
+              id="outlined-basic"
+              label="Коментарий"
+              variant="outlined"
+              name="comments"
+              onChange={(e) => handleInput(e)}
             />
-          </p>
-        </Link>
+            <Link to="/products">
+              <Button
+                id="button"
+                variant="outlined"
+                size="large"
+                fullWidth
+                onClick={(e) =>
+                  sendComment(e, productComment.id, productComment)
+                }
+              >
+                Оставьте коментарий
+              </Button>
+            </Link>
+          </div>
+        </div>
+
         <div>
           <Link className={style.buttonDetail} to="/products">
             <Button>Назад</Button>
           </Link>
-          {/* <TextField
-            my="10px"
-            fullWidth
-            id="outlined-basic"
-            label="Ваше имя"
-            variant="outlined"
-            name="user"
-            onChange={handleInp}
-          />
-          <TextField
-            fullWidth
-            id="outlined-basic"
-            label="Коментарий"
-            variant="outlined"
-            name="comment"
-            onChange={handleInp}
-          />{" "}
-          <Stack direction="row" spacing={1} sx={{ bgcolor: "#0288d1" }}>
-            <Button
-              id="button"
-              sx={{
-                bgcolor: "#263238",
-                borderColor: "error.main",
-                fontFamily: "Monospace",
-              }}
-              color="error"
-              variant="outlined"
-              size="large"
-              fullWidth
-              onClick={() => {
-                addComments(comment);
-              }}
-            >
-              Добавить коментарийий
-            </Button>
-          </Stack>
-        </div>
-        <div className="blog-left">
-          <Grid container>
-            {comments ? (
-              comments.map((item) => (
-                <Grid item>
-                  <MediaCard item={item} key={item.id} />
-                </Grid>
-              ))
-            ) : (
-              <>
-                <h2>..Loading</h2>
-              </>
-            )} */}
-          {/* </Grid> */}
+          <Link to="/products/:id">
+            <p className={style.pDetails}>
+              LIKE-{productDetails.likes}
+              <img
+                style={{ cursor: "pointer" }}
+                onClick={() => addAndDeleteLikes(productDetails)}
+                src={HeartIcon}
+                alt=""
+              />
+            </p>
+          </Link>
         </div>
       </div>
     </>
