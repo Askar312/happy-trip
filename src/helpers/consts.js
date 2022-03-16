@@ -8,4 +8,4 @@ export const ACTIONS = {
   GET_CAR: "GET_CAR",
   CHANGE_CAR_LENGTH: "CHANGE_CAR_LENGTH",
 };
-export const JSON_API_PRODUCTS = "https://happy-tripkg.herokuapp.com/api";
+export const JSON_API_PRODUCTS = "https://happy-tripkg.herokuapp.com/products";
