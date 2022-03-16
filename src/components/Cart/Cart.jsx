@@ -112,7 +112,7 @@ export default function Cart() {
           ))}
         </TableBody>
       </Table>
-      <Link to={"/credit"}>
+      <Link to={"/buy"}>
         <Button
           sx={{ width: "200px", color: "red", border: 1, my: 1, mx: 1 }}
           onClick={cartCleaner}
